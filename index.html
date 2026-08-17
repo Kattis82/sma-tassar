@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Små Tassar</title>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="#home">Små Tassar</a>
+      <nav>
+        <a href="#home">Start</a>
+        <a href="#products">Produkter</a>
+        <a href="#about">Om oss</a>
+        <a href="#contact">Kontakt</a>
+        <a href="#privacy">Integritetspolicy</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <h1>Välkommen till SMÅ TASSAR!</h1>
+
+        <p class="tagline">Allt för små tassar och stora personligheter</p>
+
+        <p class="intro-text">
+          Små Tassar är en webbutik för dig som vill hitta fina och praktiska
+          produkter som är anpassade för mindre hundraser.
+        </p>
+
+        <img
+          src="bilder/Soya.jpg"
+          alt="Liten hund som ligger på rygg och sträcker upp tassarna"
+        />
+
+        <p>
+          <a class="button" href="#products">Upptäck våra produkter</a>
+        </p>
+
+        <video src="bilder/york.mp4" width="400" autoplay muted loop>
+          Din webbläsare stödjer inte video
+        </video>
+      </section>
+
+      <section id="products">
+        <h2>Våra produkter</h2>
+
+        <h3>Promenad</h3>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <img src="bilder/sele1.webp" alt="Röd sele för små hundar" />
+            <h4>Röd sele - Small Dogs</h4>
+            <p>
+              Mjuk och justerbar sele som passar mindre hundraser samt valpar.
+              Finns även i storlek XXS
+            </p>
+            <p class="price">299 kr</p>
+          </article>
+
+          <article class="product-card">
+            <img src="bilder/sele2.avif" alt="Färgglad sele för små hundar" />
+            <h4>Multicolor sele - Evitas</h4>
+            <p>En walk-in-sele från Evitas som är lätt att ta på och av</p>
+            <p class="price">499 kr</p>
+          </article>
+
+          <article class="product-card">
+            <img src="bilder/koppel1.avif" alt="Rött koppel för små hundar" />
+            <h4>Rött koppel - Small Dogs</h4>
+            <p>
+              Snyggt hundkoppel med super-grip fäste som gör det extra
+              greppvänligt
+            </p>
+            <p class="price">350 kr</p>
+          </article>
+        </div>
+
+        <h3>Lek</h3>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <img
+              src="bilder/leksak1.avif"
+              alt="Pipleksaker i form av olika grönsaker"
+            />
+            <h4>Pipleksak grönsak - FunDogs</h4>
+            <p>
+              Mjuka pipleksaker i form av olika grönsaker som broccoli och morot
+            </p>
+            <p class="price">99 kr</p>
+          </article>
+
+          <article class="product-card">
+            <img src="bilder/leksak2.avif" alt="Grönt tuggben för små hundar" />
+            <h4>Tuggben silikon - 4YourDog</h4>
+            <p>Grönt tuggben i silikon som din hund kan tugga på länge</p>
+            <p class="price">110 kr</p>
+          </article>
+        </div>
+
+        <h3>Vardag & Vila</h3>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <img
+              src="bilder/bed1.avif"
+              alt="Ljusbeige och grön säng för små hundar"
+            />
+            <h4>Mjuk Hundsäng - 4YourDog</h4>
+            <p>
+              Elegant och bekväm hundbädd designad för att ge maximal komfort
+              med sitt mjuka material
+            </p>
+            <p class="price">699 kr</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>Om Små Tassar</h2>
+        <p>
+          Små Tassar är en svensk webbutik för dig som lever tillsammans med en
+          liten hund. Hos oss hittar du noggrant utvalda produkter för
+          promenader, lek, vardag och vila. Vi fokuserar på produkter som
+          kombinerar funktion, komfort och stil - anpassade för våra minsta
+          fyrbenta familjemedlemmar.
+        </p>
+
+        <p>
+          Idén till Små Tassar föddes ur en enkel tanke: små hundar behöver
+          produkter som är gjorda med deras storlek och behov i åtanke. När vi
+          letade efter selar, leksaker, bäddar och andra tillbehör märkte vi att
+          det inte alltid var lätt att hitta rätt storlek och kvalitet. Därför
+          skapade vi Små Tassar - en butik där det ska vara enkelt att hitta
+          fina och praktiska produkter för små hundar. Oavsett om det är dags
+          för dagens promenad, en stunds lek eller en mysig vila vill vi hjälpa
+          dig att hitta något som passar just din lilla vän.
+        </p>
+
+        <img
+          src="bilder/omosshundar.avif"
+          alt="Två glada hundar som springer tillsammans"
+        />
+      </section>
+
+      <section id="contact">
+        <h2>Kontakta oss</h2>
+
+        <p>
+          Har du frågor om våra produkter eller behöver du hjälp att hitta rätt
+          för din hund? Hör gärna av dig till oss!
+        </p>
+
+        <form action="" method="post">
+          <fieldset>
+            <legend>Kontaktuppgifter</legend>
+
+            <div>
+              <label for="name">Namn</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="name"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="email">E-post</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Vad gäller ditt ärende?</legend>
+
+            <div>
+              <label for="subject">Ämne</label>
+
+              <select name="subject" id="subject" required>
+                <option value="">Välj ett alternativ</option>
+                <option value="product">Fråga om produkt</option>
+                <option value="delivery">Fråga om leverans</option>
+                <option value="other">Övrigt</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="message">Meddelande</label>
+              <textarea name="message" id="message" required></textarea>
+            </div>
+          </fieldset>
+
+          <button type="submit">Skicka meddelande</button>
+        </form>
+
+        <p>
+          När du skickar ett meddelande till oss använder vi de personuppgifter
+          du lämnar för att kunna svara på din fråga.
+          <a href="#privacy">Läs mer i vår integritetspolicy.</a>
+        </p>
+      </section>
+
+      <section id="privacy">
+        <h2>Integritetspolicy</h2>
+
+        <h3>Vilka uppgifter samlar vi in?</h3>
+        <p>
+          När du kontaktar Små Tassar via vårt kontaktformulär kan vi samla in
+          ditt namn, din e-postadress och informationen som du skriver i ditt
+          meddelande.
+        </p>
+
+        <h3>Varför använder vi uppgifterna?</h3>
+        <p>
+          Uppgifterna används endast för att kunna läsa och svara på ditt
+          meddelande och hjälpa dig med din fråga.
+        </p>
+
+        <h3>Hur länge sparar vi uppgifterna?</h3>
+        <p>
+          Vi sparar endast uppgifterna så länge som det behövs för att hantera
+          din fråga eller ditt ärende.
+        </p>
+
+        <h3>Kontakta oss</h3>
+        <p>
+          Har du frågor om hur dina personuppgifter behandlas är du välkommen
+          att kontakta Små Tassar.
+          <a href="#contact">Kontakta oss via vårt kontaktformulär</a>
+        </p>
+
+        <p>Detta är en övning och texten är inte juridisk rådgivning.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Små Tassar</p>
+
+      <p>För små hundar och deras människor.</p>
+
+      <p>
+        E-post:
+        <a href="mailto:info@smatassar.se">info@smatassar.se</a>
+      </p>
+
+      <p>
+        <a href="#privacy">Integritetspolicy</a>
+      </p>
+
+      <p>Små Tassar &copy; 2026</p>
+    </footer>
+  </body>
+</html>
