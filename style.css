@@ -122,9 +122,9 @@ h2 {
   font-size: 2rem;
 }
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -139,6 +139,8 @@ h2 {
   background-color: white;
   padding: 20px;
   border-radius: 12px;
+  width: 300px;
+  max-width: 100%;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease;
 }
