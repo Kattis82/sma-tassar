@@ -100,7 +100,7 @@ nav a {
 }
 
 main {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -170,15 +170,30 @@ h2 {
   margin-top: 15px;
 }
 
-form {
+#about img {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 30px auto;
+  border-radius: 15px;
+}
+
+#contact {
   max-width: 800px;
   margin: 0 auto;
+}
+
+form {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 fieldset {
   border: 1px solid #b8d4e8;
   border-radius: 10px;
-  padding: 25px;
+  padding: 18px;
   margin-bottom: 25px;
   background-color: white;
 }
@@ -204,7 +219,7 @@ input[type="email"],
 select,
 textarea {
   width: 100%;
-  padding: 10px;
+  padding: 5px 10px;
   border: 1px solid #9bbdd4;
   border-radius: 6px;
   font: inherit;
@@ -275,4 +290,18 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
 }
