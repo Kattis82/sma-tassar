@@ -346,6 +346,31 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.hidden {
+  display: none;
+}
+
+#cart {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid #b8d4e8;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+#cart-items {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0;
+}
+
+#cart-items li {
+  padding: 10px 0;
+  border-bottom: 1px solid #e3eef5;
+}
+
 @media (max-width: 900px) {
   .featured-product {
     width: 50%;
