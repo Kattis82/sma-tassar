@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "category": "walk",
+    "name": "Röd sele - Small Dogs",
+    "description": "Mjuk och justerbar sele som passar mindre hundraser samt valpar. Finns även i storlek XXS",
+    "price": 299,
+    "image": "bilder/sele1.webp",
+    "imageAlt": "Röd sele för små hundar",
+    "badge": "Populär"
+  },
+
+  {
+    "id": 2,
+    "category": "walk",
+    "name": "Multicolor sele - Evitas",
+    "description": "En walk-in-sele från Evitas som är lätt att ta på och av",
+    "price": 499,
+    "image": "bilder/sele2.avif",
+    "imageAlt": "Färgglad sele för små hundar",
+    "badge": ""
+  },
+
+  {
+    "id": 3,
+    "category": "walk",
+    "name": "Rött koppel - Small Dogs",
+    "description": "Snyggt hundkoppel med super-grip fäste som gör det extra greppvänligt",
+    "price": 350,
+    "image": "bilder/koppel1.avif",
+    "imageAlt": "Rött koppel för små hundar",
+    "badge": ""
+  },
+
+  {
+    "id": 4,
+    "category": "toy",
+    "name": "Pipleksak grönsak - FunDogs",
+    "description": "Mjuka pipleksaker i form av olika grönsaker som broccoli och morot",
+    "price": 99,
+    "image": "bilder/leksak1.avif",
+    "imageAlt": "Pipleksaker i form av olika grönsaker",
+    "badge": ""
+  },
+
+  {
+    "id": 5,
+    "category": "toy",
+    "name": "Tuggben silikon - 4YourDog",
+    "description": "Grönt tuggben i silikon som din hund kan tugga på länge",
+    "price": 110,
+    "image": "bilder/leksak2.avif",
+    "imageAlt": "Grönt tuggben för små hundar",
+    "badge": "Rea"
+  },
+
+  {
+    "id": 6,
+    "category": "home",
+    "name": "Mjuk Hundsäng - 4YourDog",
+    "description": "Elegant och bekväm hundbädd designad för att ge maximal komfort med sitt mjuka material",
+    "price": 699,
+    "image": "bilder/bed1.avif",
+    "imageAlt": "Ljusbeige och grön säng för små hundar",
+    "badge": "Nyhet"
+  }
+]
