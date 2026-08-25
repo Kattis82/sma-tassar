@@ -25,6 +25,18 @@ function updateCart() {
   }
 }
 
+function updateCartCount() {
+  let totalItems = 0;
+
+  // går igenom alla produkter i varukorgen
+  for (const productName in cartItems) {
+    totalItems += cartItems[productName];
+  }
+
+  // uppdaterar siffran i menyn
+  cartCount.textContent = totalItems;
+}
+
 buyButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const productName = button.dataset.name;
@@ -43,6 +55,7 @@ buyButtons.forEach((button) => {
     }
 
     updateCart();
+    updateCartCount();
   });
 });
 
@@ -50,6 +63,7 @@ buyButtons.forEach((button) => {
 const cart = document.querySelector("#cart");
 const cartButton = document.querySelector("#cart-button");
 const closeCartButton = document.querySelector("#close-cart");
+const cartCount = document.querySelector("#cart-count");
 
 // när man klickar på menylänken visas varukorgen
 cartButton.addEventListener("click", (event) => {
