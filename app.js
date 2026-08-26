@@ -77,7 +77,6 @@ const getProducts = async () => {
 
 const renderProducts = (products) => {
   products.forEach((product) => {
-    
     // skapar en article för varje produkt
     const article = document.createElement("article");
     article.classList.add("product-card");
@@ -128,6 +127,22 @@ const renderProducts = (products) => {
     button.classList.add("buy-button");
     button.textContent = "Lägg i varukorg";
 
+    // container för antal + knapp
+    const buySection = document.createElement("div");
+    buySection.classList.add("buy-section");
+
+    // container för label + input
+    const quantityContainer = document.createElement("div");
+    quantityContainer.classList.add("quantity-container");
+
+    // label och input läggs i quantityContainer
+    quantityContainer.appendChild(quantityLabel);
+    quantityContainer.appendChild(quantityInput);
+
+    // quantityContainer och knapp läggs i buySection
+    buySection.appendChild(quantityContainer);
+    buySection.appendChild(button);
+
     button.addEventListener("click", () => {
       const quantity = Number(quantityInput.value);
 
@@ -147,9 +162,7 @@ const renderProducts = (products) => {
     article.appendChild(description);
     article.appendChild(price);
 
-    article.appendChild(quantityLabel);
-    article.appendChild(quantityInput);
-    article.appendChild(button);
+    article.appendChild(buySection);
 
     // placerar kortet i rätt kategori
     if (product.category === "walk") {

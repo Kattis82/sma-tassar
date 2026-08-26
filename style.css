@@ -19,10 +19,15 @@ header {
   top: 0;
   z-index: 100;
   background-color: #dcebf7;
-  padding: 20px;
+  padding: 14px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.header-top {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  margin-bottom: 15px;
 }
 
 #home {
@@ -30,21 +35,25 @@ header {
 }
 
 #home > img {
-  display: block;
   width: 100%;
-  max-width: 500px;
-  height: auto;
-  margin: 30px auto;
-  border-radius: 15px;
+  max-width: 1000px;
+
+  height: clamp(350px, 55vw, 650px);
+
+  object-fit: cover;
+  object-position: center 40%;
+
+  display: block;
+  margin: 0 auto 30px;
+  border-radius: 0;
 }
 
 #home video {
   display: block;
   width: 100%;
-  max-width: 500px;
-  height: auto;
-  margin: 30px auto;
-  border-radius: 15px;
+  max-width: 550px;
+  margin: 35px auto;
+  border-radius: 5px;
 }
 
 #home .button {
@@ -53,24 +62,29 @@ header {
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #24577a;
   text-decoration: none;
 }
 
+.logo-image {
+  height: 72px;
+  width: auto;
+  display: block;
+}
+
 .tagline {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: bold;
   color: #24577a;
+  margin-bottom: 12px;
 }
 
 .intro-text {
   width: 100%;
-  max-width: 500px;
+  max-width: 420px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  margin: 0 auto 25px;
 }
 
 .button {
@@ -78,20 +92,14 @@ header {
   background-color: #24577a;
   color: white;
   padding: 12px 24px;
-  border-radius: 8px;
+  border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  width: 100%;
   margin-top: 10px;
 }
 
 .button:hover {
   background-color: #1b4965;
-}
-
-nav a:hover,
-footer a:hover {
-  text-decoration: underline;
 }
 
 a:focus {
@@ -101,12 +109,27 @@ a:focus {
 
 nav {
   display: flex;
-  gap: 14px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  border-top: 1px solid #b8d4e8;
+  padding-top: 15px;
 }
 
 nav a {
-  color: #333333;
+  color: #24577a;
   text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  color: #1b4965;
+}
+
+#cart-button {
+  color: #24577a;
 }
 
 main {
@@ -125,7 +148,8 @@ h2 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -186,9 +210,33 @@ h2 {
   margin-bottom: 10px;
 }
 
+.buy-section {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.quantity-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.quantity-container label {
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+
 .product-card input[type="number"] {
-  width: 70px;
-  margin-bottom: 12px;
+  width: 65px;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+.buy-button {
+  padding: 10px 18px;
+  height: 42px;
+  white-space: nowrap;
 }
 
 .price {
@@ -306,7 +354,7 @@ button {
   color: white;
   border: none;
   padding: 12px 24px;
-  border-radius: 8px;
+  border-radius: 5px;
   font: inherit;
   font-weight: bold;
   cursor: pointer;
@@ -361,30 +409,42 @@ footer a:hover {
 }
 
 #cart {
-  max-width: 500px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: white;
-  border: 2px solid #b8d4e8;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  max-width: 550px;
+  margin: 50px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #d8e8f3;
+  box-shadow: 0 8px 20px rgba(36, 87, 122, 0.12);
+}
+
+#cart h2 {
+  margin-top: 0;
+  color: #24577a;
+  text-align: center;
 }
 
 #cart-items {
   list-style: none;
   padding-left: 0;
-  margin: 20px 0;
+  margin: 25px 0;
 }
 
 #cart-items li {
-  padding: 10px 0;
-  border-bottom: 1px solid #e3eef5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 16px;
+  margin-bottom: 10px;
+
+  background-color: #f6fbff;
+  border-radius: 10px;
 }
 
-#cart-button {
-  margin-left: auto;
-  font-weight: bold;
-  color: #24577a;
+#close-cart {
+  width: 100%;
+  margin-top: 15px;
 }
 
 @media (max-width: 900px) {
@@ -394,16 +454,19 @@ footer a:hover {
 }
 
 @media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
+  .header-top {
+    justify-content: center;
+  }
+
+  .logo-image {
+    height: 80px;
   }
 
   nav {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 12px 18px;
+    padding-top: 12px;
   }
 
   #cart-button {
