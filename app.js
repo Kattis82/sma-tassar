@@ -1,5 +1,7 @@
 console.log("Små Tassar JavaScript är igång!");
 
+let products = [];
+
 // objektet (varukorgen) som ska innehålla produkter (nyckel) och antal (värde)
 const cartItems = {};
 
@@ -67,7 +69,7 @@ const getProducts = async () => {
       return;
     }
 
-    const products = await response.json();
+    products = await response.json();
 
     renderProducts(products);
   } catch (error) {
